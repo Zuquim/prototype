@@ -3,9 +3,9 @@ import java.util.Date;
 public class Solicitacao {
 
 	private Date dataSolicit;
-	private Date dataAprov;
+	private Date dataResposta;
 	private Date dataRetirada;
-	private int id;
+	static private int id;  // id unico da solicitacao, incrementado a cada nova solicitacao
 	private int quantidade;
 	private Item item;
 	private boolean foiAprov;
@@ -18,12 +18,12 @@ public class Solicitacao {
 		this.dataSolicit = dataSolicit;
 	}
 
-	public Date getDataAprov() {
-		return dataAprov;
+	public Date getDataResposta() {
+		return dataResposta;
 	}
 
-	public void setDataAprov(Date dataAprov) {
-		this.dataAprov = dataAprov;
+	public void setDataResposta(Date dataResposta) {
+		this.dataResposta = dataResposta;
 	}
 
 	public Date getDataRetirada() {
