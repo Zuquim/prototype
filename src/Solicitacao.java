@@ -7,7 +7,7 @@ public class Solicitacao {
 	private Date dataRetirada;
 	private int id;
 	private int quantidade;
-//	private Item item = new Item();
+	private Item item;
 	private boolean foiAprov;
 
 	public Date getDataSolicit() {
@@ -48,6 +48,14 @@ public class Solicitacao {
 
 	public void setQuantidade(int quantidade) {
 		this.quantidade = quantidade;
+	}
+
+	public Item getItem() {
+		return item;
+	}
+
+	public void setItem(Item item) {
+		this.item = item;
 	}
 
 	public boolean isFoiAprov() {
