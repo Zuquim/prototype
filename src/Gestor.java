@@ -11,4 +11,4 @@ public class Gestor extends Usuario {
 		s.setDataResposta(data);
 		return resposta;
 	}
-
+}
