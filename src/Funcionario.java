@@ -5,11 +5,11 @@ public class Funcionario extends Usuario {
 	static final boolean gestor = false;
 	static Solicitacao s = new Solicitacao();
 	
-	Date date = new Date();
-	
 	private void solicita(Item i) {
-		s.setDataSolicit(date);
+		Date data = new Date();
+		s.setDataSolicit(data);
 //		i.setId();
+		s.id += 1;  // incrementador do id de solicitacao
 	}
 	
 }
