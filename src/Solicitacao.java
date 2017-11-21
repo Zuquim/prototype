@@ -5,7 +5,7 @@ public class Solicitacao {
 	private Date dataSolicit;
 	private Date dataResposta;
 	private Date dataRetirada;
-	static private int id;  // id unico da solicitacao, incrementado a cada nova solicitacao
+	private static int id;  // id unico da solicitacao, incrementado a cada nova solicitacao
 	private int quantidade;
 	private Item item;
 	private boolean foiAprov;
@@ -39,7 +39,7 @@ public class Solicitacao {
 	}
 
 	public void setId(int id) {
-		this.id = id;
+		Solicitacao.id = id;
 	}
 
 	public int getQuantidade() {

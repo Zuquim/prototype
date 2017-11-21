@@ -1,13 +1,17 @@
+import java.util.Date;
 
 public class Gestor extends Usuario {
 
 	static final boolean gestor = true;
-	static boolean resposta;
+	private static boolean resposta;
 	
-	private boolean avalia(Solicitacao s) {
+	public boolean avalia(Solicitacao s) {
 		Date data = new Date();
 //		if s.getQuant() > s.item.estoque {resposta = false;}
-		if(resposta = true) s.foiAprov = true;
+		if(resposta = true) {
+			s.setFoiAprov(true);
+			s.setDataResposta(data);
+		}
 		s.setDataResposta(data);
 		return resposta;
 	}
