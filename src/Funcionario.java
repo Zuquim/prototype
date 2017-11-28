@@ -12,4 +12,9 @@ public class Funcionario extends Usuario {
 //		i.setId();
 	}
 	
+	public void fazSolicitacao() {  // TODO
+		DAO.setInDB("INSERT INTO solicitacoes(nomeUser, matriculaUser, nomeMaterial, qtdMaterial, metricaMaterial, clienteMaterial)"
+				+ "VALUES ('$nomeUser', '$matriculaUser', '$nomeMaterial', '$qtdMaterial', '$metricaMaterial', '$clienteMaterial')");
+	}
+	
 }
