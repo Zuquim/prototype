@@ -6,6 +6,11 @@ public class Gestor extends Usuario {
 	private static boolean resposta;
 	private static String solicitacoes;
 	
+	public Gestor(String matricula, String nome, String login, String senha, String foto) {
+		super(matricula, nome, login, senha, foto, gestor);
+		// TODO Auto-generated constructor stub
+	}
+
 	public boolean avalia(Solicitacao s) {
 		Date data = new Date();
 //		if s.getQuant() > s.item.estoque {resposta = false;}
