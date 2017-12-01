@@ -6,6 +6,24 @@ public class Usuario {
 	private String nome;
 	private String matricula;
 	private String foto;
+	private boolean isGestor;
+	
+	public Usuario(String matricula, String nome, String login, String senha, String foto, boolean isGestor) {
+		this.setMatricula(matricula);
+		this.setNome(nome);
+		this.setLogin(login);
+		this.setSenha(senha);
+		this.setFoto(foto);
+		this.setGestor(isGestor);
+	}
+
+	public boolean isGestor() {
+		return isGestor;
+	}
+
+	public void setGestor(boolean isGestor) {
+		this.isGestor = isGestor;
+	}
 
 	public String getLogin() {
 		return login;
